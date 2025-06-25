@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Business Product Catalog</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Inter font for a modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-8">
+        <!-- Header Section -->
+        <header class="text-center mb-12 w-full max-w-4xl">
+            <h1 class="text-5xl font-extrabold text-blue-700 mb-4 rounded-xl shadow-lg p-4 bg-white">
+                Our Product Catalogue
+            </h1>
+            <p class="text-xl text-gray-600 mb-2">
+                Discover our range of different Rolex models and other beautiful brands we have you in mind.
+            </p>
+            <p class="text-sm text-gray-500 italic">
+ROLEX TIMEPIECE            </p>
+        </header>
+
+        <!-- Product Grid Container -->
+        <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full max-w-7xl">
+            <!-- Product Card Template (repeated for each product) -->
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <!-- Product Image -->
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/e0f2fe/0369a1?text=Product+1" alt="Product Image 1"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <!-- Product Details -->
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">ROLEX SUBMARINER</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        The quintessential diver's watch, renowned for its robustness and water resistance (up to 300 meters/1,000 feet). It features a unidirectional rotatable bezel for tracking dive time and a highly legible Chromalight display for underwater visibility.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$7,500 - $15,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/ffe4e1/cd5c5c?text=Product+2" alt="Product Image 2"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">ROLEX DATEJUST</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                    A timeless classic launched in 1945, the Datejust was the first self-winding waterproof chronometer wristwatch to display the date in a window at 3 o'clock, magnified by the iconic Cyclops lens.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$6,029.50 - $15,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/fff0f5/ff69b4?text=Product+3" alt="Product Image 3"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">ROLEX GMT (Pepsi, Batman/Batgirl etc)</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+GMT-Master II: Designed for global travelers, this watch displays two time zones simultaneously with a distinctive 24-hour hand and a bidirectional rotatable 24-hour graduated bezel, often featuring two-color ceramic inserts (e.g., "Pepsi," "Batman").
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$11,450 - $16,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/e6e6fa/8a2be2?text=Product+4" alt="Product Image 4"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Sea-Dweller</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        An ultra-resistant professional diver's watch developed for deep-sea exploration, featuring a helium escape valve for saturation diving and extreme water resistance (up to 1,220 meters/4,000 feet).
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$17,500 - $25,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/b0e0e6/4682b4?text=Product+5" alt="Product Image 5"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Yacht-Master</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        An elegant yet technical watch designed for sailing, featuring a bidirectional rotatable bezel for precise measurement of time intervals and a strong connection to the world of yachting.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$12,000 - $40,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/f5f5dc/8b4513?text=Product+6" alt="Product Image 6"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Daytona</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        The iconic chronograph designed for endurance racing drivers, known for its precision timing and robust Oyster case. Highly sought after for its distinctive tachymetric bezel.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$20,000 - $50,000+</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/afeeee/008080?text=Product+7" alt="Product Image 7"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Explorer</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        A rugged and simple watch built for adventure and exploration, known for its extreme legibility and durability in challenging environments.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$6,500 - $12,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/f0e68c/daa520?text=Product+8" alt="Product Image 8"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Milgauss</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        Engineered for scientists, the Milgauss features a unique magnetic shield that protects the movement from magnetic fields, ensuring precision in demanding electromagnetic environments.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$8,000 - $15,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/d8bfd8/800080?text=Product+9" alt="Product Image 9"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Air-King</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        A tribute to aviation pioneers, the Air-King combines classic aesthetics with modern performance, featuring a distinctive black dial with large 3, 6, and 9 numerals.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$7,000 - $10,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/add8e6/4169e1?text=Product+10" alt="Product Image 10"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Cellini</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        Rolex's collection of classic dress watches, known for their elegant and refined designs, contrasting with the brand's more sporty Oyster Perpetual models.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$15,000 - $30,000+</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/ffb6c1/ff1493?text=Product+11" alt="Product Image 11"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Sky-Dweller</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        A sophisticated annual calendar and dual time zone watch, designed for world travelers, featuring an innovative Ring Command bezel for easy setting.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$16,000 - $40,000+</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/ffe0b2/ff8c00?text=Product+12" alt="Product Image 12"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Rolex Pearlmaster</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        A true jewel-watch, the Pearlmaster is characterized by its gem-set dials and bezels, and the distinctive five-piece Pearlmaster bracelet, embodying luxury and elegance.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$30,000 - $100,000+</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/e0ffff/7fffd4?text=Product+13" alt="Product Image 13"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Tudor Black Bay</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        A popular dive watch from Rolex's sister brand, Tudor, blending classic aesthetics with modern watchmaking, featuring a distinctive snowflake hand.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$3,500 - $5,500</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/f0f8ff/5f9ea0?text=Product+14" alt="Product Image 14"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Tudor Pelagos</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        A professional dive watch from Tudor, known for its titanium case, helium escape valve, and extreme water resistance, designed for serious divers.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$4,000 - $6,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col">
+                <div class="relative w-full h-48 bg-gray-200 flex items-center justify-center overflow-hidden rounded-t-xl">
+                    <img src="https://placehold.co/400x300/faebd7/d2b48c?text=Product+15" alt="Product Image 15"
+                         class="w-full h-full object-cover rounded-t-xl transition-transform duration-300 hover:scale-105"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/cccccc/333333?text=Image+Not+Found';">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Omega Seamaster Diver 300M</h2>
+                    <p class="text-gray-600 text-sm flex-grow mb-4">
+                        A renowned diver's watch famous for its appearances in James Bond films, featuring a ceramic bezel, helium escape valve, and excellent water resistance.
+                    </p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-gray-100">
+                        <span class="text-2xl font-extrabold text-green-600">$5,000 - $8,000</span>
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700
+                                       transition-all duration-300 transform hover:scale-105 shadow-md">
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="mt-12 text-center text-gray-500 text-sm w-full max-w-4xl">
+            <p>&copy; 2024 Rolex Timepiece. All rights reserved.</p>
+            <p>For inquiries, please contact us at <a href="mailto:info@rolexauthentc.com" class="text-blue-600 hover:underline">info@rolexauthentc.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
